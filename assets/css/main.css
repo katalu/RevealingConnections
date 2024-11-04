@@ -3091,7 +3091,7 @@
 	}
 
 	#banner {
-		padding: 16em 0 9em 0;
+		padding: 16em 0 11em 0;
 		background-attachment: fixed;
 		background-image: url("images/overlay.png"), url("../../images/backgroundMain.png");
 		background-position: center top;
