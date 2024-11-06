@@ -1759,6 +1759,12 @@ pre code {
     overflow-x: auto;
 }
 
+#speaker h2 {
+	color: #52ab86;
+	
+	
+}
+
 /* Four-box layout container */
 .four-box-layout {
     display: flex;
