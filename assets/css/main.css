@@ -9,7 +9,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -1653,7 +1653,7 @@
 
 	a {
 		text-decoration: underline;
-		color: #f32853;
+		color: #52ab86;
 	}
 
 		a:hover {
@@ -1671,6 +1671,7 @@
 
 	p {
 		margin: 0 0 2em 0;
+		text-align: justify;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1757,6 +1758,94 @@
 			padding: 1em 1.5em;
 			overflow-x: auto;
 		}
+		
+		/* Four-box layout container */
+.four-box-layout {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 2em 0;
+}
+
+/* Box container (for each section with title and content) */
+.four-box-layout .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Adjust as needed */
+}
+
+/* Title styling (h4) outside the box */
+.four-box-layout .box-container h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+/* Content box styling */
+.four-box-layout .box {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ddd; /* Grey border */
+    border-radius: 10px;
+    background-color: #F9F9F9;
+    text-align: center;
+}
+
+/* Code styling within each content box */
+.four-box-layout pre {
+    background-color: #F9F9F9;
+    border: none;
+    padding: 0;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    color: #333;
+    margin: 0;
+    white-space: normal; /* Enable text wrapping */
+}
+
+.four-box-layout pre code {
+    display: block;
+    line-height: 1.5;
+    color: #555;
+    overflow: visible; /* Remove scroll */
+}
+
+/* Button styling if needed */
+.four-box-layout .box-container .card-button {
+    background-color: #D94F00;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+.four-box-layout .box-container .card-button:hover {
+    background-color: #C34500;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 600px) {
+    .four-box-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .four-box-layout .box-container {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+}
+
 
 	hr {
 		border: 0;
@@ -2616,7 +2705,7 @@
 		}
 
 			header.major h2 {
-				font-size: 2.5em;
+				font-size: 2em;
 			}
 
 			header.major p {
