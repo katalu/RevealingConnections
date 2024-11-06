@@ -1759,13 +1759,16 @@
 			overflow-x: auto;
 		}
 		
-		/* Four-box layout container */
+/* Four-box layout container - Apply darker border here */
 .four-box-layout {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
     margin: 2em 0;
+    /* border: 2px solid #333;  Darker border for the outer container */
+    border-radius: 10px;
+    padding: 20px;  /* Optional: add padding inside the container */
 }
 
 /* Box container (for each section with title and content) */
@@ -1773,7 +1776,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px; /* Adjust as needed */
+    width: 300px; /* Adjust as needed */
 }
 
 /* Title styling (h4) outside the box */
@@ -1785,14 +1788,13 @@
     text-align: center;
 }
 
-/* Content box styling */
+/* Content box styling (no border here) */
 .four-box-layout .box {
     width: 100%;
     padding: 1em;
-    border: 1px solid #ddd; /* Grey border */
-    border-radius: 10px;
+    border: none; /* No border for individual boxes */
     background-color: #F9F9F9;
-    text-align: center;
+    text-align: left;
 }
 
 /* Code styling within each content box */
@@ -1844,8 +1846,6 @@
         max-width: 300px;
     }
 }
-}
-
 
 	hr {
 		border: 0;
