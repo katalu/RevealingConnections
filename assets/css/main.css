@@ -1806,6 +1806,29 @@ pre code {
     }
 }
 
+.logo-row {
+    display: flex;                   /* Flex layout for each row */
+    justify-content: center;         /* Center logos within the row */
+    gap: 2em;                        /* Space between logos */
+    margin-bottom: 1em;              /* Space between rows */
+}
+
+.logo {
+    max-width: 50px;                /* Max width for logos */
+    height: auto;                    /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-row {
+        flex-wrap: wrap;             /* Wrap logos to the next line if needed */
+    }
+
+    .logo {
+        max-width: 80px;             /* Adjust logo size for smaller screens */
+    }
+}
+
 /* Four-box layout container */
 .four-box-layout {
     display: flex;
