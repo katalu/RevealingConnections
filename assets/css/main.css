@@ -1762,7 +1762,48 @@ pre code {
 #speaker h2 {
 	color: #52ab86;
 	
-	
+}
+
+#speaker {
+    display: flex;
+    flex-direction: column;       /* Stack header above content */
+    gap: 1em;                     /* Space between header and content */
+}
+
+.header {
+    text-align: left;           /* Center-align header text */
+}
+
+.content {
+    display: flex;                /* Flexbox for image and paragraph alignment */
+    align-items: flex-start;      /* Align items at the top */
+    gap: 1.5em;                   /* Space between image and text */
+}
+
+.image.left {
+    max-width: 250px;             /* Restrict image width */
+    flex-shrink: 0;               /* Prevent image from shrinking */
+}
+
+.content p {
+    flex: 1;                      /* Allow paragraph to take up remaining space */
+    margin: 0;                    /* Remove default margins */
+}
+
+/* Optional: Responsive design for smaller screens */
+@media screen and (max-width: 736px) {
+    #speaker {
+        align-items: center;      /* Center-align content */
+    }
+
+    .content {
+        flex-direction: column;   /* Stack image above text */
+        align-items: center;      /* Center-align items */
+    }
+
+    .image.left {
+        margin-bottom: 1em;       /* Space below the image when stacked */
+    }
 }
 
 /* Four-box layout container */
@@ -2401,14 +2442,14 @@ pre code {
 /* Image */
 
 	.image {
-		border-radius: 4px;
+		border-radius: 50%;
 		border: 0;
 		display: inline-block;
 		position: relative;
 	}
 
 		.image img {
-			border-radius: 4px;
+			border-radius: 50%;
 			display: block;
 		}
 
