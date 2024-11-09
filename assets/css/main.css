@@ -1972,34 +1972,33 @@ pre code {
         width: 100%;
         max-width: 300px;
         margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
     }
 
     .four-box-layout .box {
         width: 100%;
-        min-height: auto; /* Allow height to adjust based on content */
         padding: 1em;
-        box-sizing: border-box;
+        background-color: #52ab86;
+        text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        flex-grow: 1; /* Let the box expand based on content */
+        justify-content: center;
+        box-sizing: border-box;
+        min-height: 60px; /* Prevents collapsing */
     }
 
+    /* Updated pre styling */
     .four-box-layout pre {
-        white-space: normal; /* Allow text wrapping */
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-        overflow-wrap: break-word; /* Prevent overflow of long words */
-        word-break: break-word; /* Break long words */
-        flex-grow: 1; /* Expand based on content */
-    }
-
-    .four-box-layout .box-container a {
-        width: 100%;
-        display: block;
-        text-align: center;
+        display: block; /* Ensures it's a block-level element */
+        width: 100%; /* Takes the full width of the parent */
+        height: auto; /* Allows height to grow */
+        margin: 0; /* Removes default margin */
+        white-space: pre-wrap; /* Wraps text while maintaining pre formatting */
+        word-break: break-word; /* Prevents long words from overflowing */
+        padding: 0.5em 0; /* Adds padding for better spacing */
+        flex-grow: 1; /* Makes sure it fills the parent box */
     }
 }
 
