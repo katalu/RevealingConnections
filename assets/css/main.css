@@ -1799,7 +1799,7 @@ pre code {
     margin: 0;                    /* Remove default margins */
 }
 
-/* Responsive design for smaller screens */
+/* Optional: Responsive design for smaller screens */
 @media screen and (max-width: 736px) {
     #speaker {
         align-items: center;      /* Center-align content */
@@ -1808,16 +1808,9 @@ pre code {
     .content {
         flex-direction: column;   /* Stack image above text */
         align-items: center;      /* Center-align items */
-        width: 100%;              /* Full width of content */
-        padding: 0 1em;           /* Padding for better spacing */
     }
 
     .image.left {
-        width: 90%;               /* Use 90% of the container width */
-        flex-basis: 90%;          /* Make image take up most of the container */
-        max-width: 600px;         /* Allow it to grow but not excessively */
-        min-width: 250px;         /* Ensure it doesn't get too narrow */
-        height: auto;             /* Maintain aspect ratio */
         margin-bottom: 1em;       /* Space below the image when stacked */
     }
 }
