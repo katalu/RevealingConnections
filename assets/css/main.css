@@ -1968,16 +1968,26 @@ pre code {
 
 }
 
-/* Responsive layout for mobile */
+//* Responsive layout for mobile */
 @media (max-width: 600px) {
     .four-box-layout {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column;   /* Stack boxes vertically */
+        align-items: center;      /* Center-align the boxes */
+        padding: 10px;            /* Add some padding for better spacing */
     }
 
     .four-box-layout .box-container {
-        width: 100%;
-        max-width: 300px;
+        width: 100%;              /* Make each box-container full width */
+        max-width: 400px;         /* Increase the max-width to make boxes larger */
+        padding: 10px;            /* Add padding for better spacing */
+        box-sizing: border-box;   /* Include padding in the total width */
+    }
+
+    .four-box-layout .box {
+        padding: 1.5em;           /* Increase padding inside the box for a larger appearance */
+        background-color: #52ab86; /* Ensure the background color stays */
+        text-align: left;         /* Keep the text left-aligned */
+        width: 100%;              /* Ensure box takes full width of the container */
     }
 }
 
@@ -3065,7 +3075,7 @@ body.elements-page #footer .copyright {
 		@media screen and (max-width: 480px) {
 
 			.wrapper {
-				padding: 2em 0 0.1em 0;
+				padding: 4em 0 0.1em 0;
 			}
 
 		}
@@ -3639,7 +3649,7 @@ body.is-touch #banner2 {
 		@media screen and (max-width: 480px) {
 
 			#footer {
-				padding: 3em 0 1em 0;
+				padding: 4em 0 0 0;
 			}
 
 				.copyright {
