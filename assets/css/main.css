@@ -1808,14 +1808,15 @@ pre code {
     .content {
         flex-direction: column;   /* Stack image above text */
         align-items: center;      /* Center-align items */
-        width: 100%;              /* Ensure full width of content */
-        padding: 0 1em;           /* Add padding for better spacing */
+        width: 100%;              /* Full width of content */
+        padding: 0 1em;           /* Padding for better spacing */
     }
 
     .image.left {
-        width: 100%;              /* Use full width available */
-        max-width: 300px;         /* Limit maximum width to prevent stretching */
-        min-width: 200px;         /* Set minimum width to prevent it from getting too narrow */
+        width: 90%;               /* Use 90% of the container width */
+        flex-basis: 90%;          /* Make image take up most of the container */
+        max-width: 600px;         /* Allow it to grow but not excessively */
+        min-width: 250px;         /* Ensure it doesn't get too narrow */
         height: auto;             /* Maintain aspect ratio */
         margin-bottom: 1em;       /* Space below the image when stacked */
     }
