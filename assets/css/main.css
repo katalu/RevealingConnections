@@ -1965,35 +1965,32 @@ pre code {
     .four-box-layout {
         flex-direction: column;
         align-items: center;
+        padding: 0 1em; /* Add padding to avoid edge touching */
     }
 
     .four-box-layout .box-container {
         width: 100%;
         max-width: 300px;
+        margin-bottom: 10px; /* Space between the boxes */
+    }
+
+    .four-box-layout .box {
+        width: 100%;
+        min-height: 80px; /* Ensure boxes don't collapse */
+        padding: 1em; /* Padding inside the box for spacing */
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .four-box-layout pre {
+        white-space: normal; /* Handle overflow properly */
+        text-align: center; /* Center text inside pre */
+        width: 100%; /* Make sure it spans the full width */
+        margin: 0 auto;
     }
 }
-
-	hr {
-		border: 0;
-		border-bottom: solid 1.5px rgba(96, 191, 151);
-		margin: 2em 0;
-	}
-
-		hr.major {
-			margin: 3em 0;
-		}
-
-	.align-left {
-		text-align: left;
-	}
-
-	.align-center {
-		text-align: center;
-	}
-
-	.align-right {
-		text-align: right;
-	}
 
 /* Box */
 
