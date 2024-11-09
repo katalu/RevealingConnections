@@ -1965,46 +1965,36 @@ pre code {
     .four-box-layout {
         flex-direction: column;
         align-items: center;
-        padding: 0 1em;
     }
 
     .four-box-layout .box-container {
         width: 100%;
         max-width: 300px;
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .four-box-layout .box {
-        width: 100%;
-        padding: 1em;
-        background-color: #52ab86;
-        text-align: center;
-        display: flex;
-        flex-direction: row; /* Set horizontal direction */
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-    }
-
-    /* Ensure pre text and links are inline */
-    .four-box-layout pre {
-        white-space: pre-wrap; /* Wrap text while maintaining pre formatting */
-        word-break: break-word; /* Break long words */
-        width: auto; /* Allow it to size based on content */
-        margin: 0 auto;
-        display: inline-block; /* Keep content inline */
-    }
-
-    .four-box-layout pre a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 1.2em;
-        display: inline; /* Ensure anchor text is inline */
-        padding: 0.2em 0.5em;
     }
 }
+
+	hr {
+		border: 0;
+		border-bottom: solid 1.5px rgba(96, 191, 151);
+		margin: 2em 0;
+	}
+
+		hr.major {
+			margin: 3em 0;
+		}
+
+	.align-left {
+		text-align: left;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	.align-right {
+		text-align: right;
+	}
+
 
 /* Box */
 
