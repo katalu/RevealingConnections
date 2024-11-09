@@ -1965,30 +1965,41 @@ pre code {
     .four-box-layout {
         flex-direction: column;
         align-items: center;
-        padding: 0 1em; /* Add padding to avoid edge touching */
+        padding: 0 1em;
     }
 
     .four-box-layout .box-container {
         width: 100%;
         max-width: 300px;
-        margin-bottom: 10px; /* Space between the boxes */
+        margin-bottom: 10px;
     }
 
     .four-box-layout .box {
         width: 100%;
-        min-height: 80px; /* Ensure boxes don't collapse */
-        padding: 1em; /* Padding inside the box for spacing */
+        min-height: auto; /* Allow height to adjust based on content */
+        padding: 1em;
         box-sizing: border-box;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        flex-grow: 1; /* Let the box expand based on content */
     }
 
     .four-box-layout pre {
-        white-space: normal; /* Handle overflow properly */
-        text-align: center; /* Center text inside pre */
-        width: 100%; /* Make sure it spans the full width */
+        white-space: normal; /* Allow text wrapping */
+        width: 100%;
+        text-align: center;
         margin: 0 auto;
+        overflow-wrap: break-word; /* Prevent overflow of long words */
+        word-break: break-word; /* Break long words */
+        flex-grow: 1; /* Expand based on content */
+    }
+
+    .four-box-layout .box-container a {
+        width: 100%;
+        display: block;
+        text-align: center;
     }
 }
 
