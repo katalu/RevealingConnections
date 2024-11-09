@@ -1982,23 +1982,27 @@ pre code {
         background-color: #52ab86;
         text-align: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row; /* Set horizontal direction */
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
-        min-height: 60px; /* Prevents collapsing */
     }
 
-    /* Updated pre styling */
+    /* Ensure pre text and links are inline */
     .four-box-layout pre {
-        display: block; /* Ensures it's a block-level element */
-        width: 100%; /* Takes the full width of the parent */
-        height: auto; /* Allows height to grow */
-        margin: 0; /* Removes default margin */
-        white-space: pre-wrap; /* Wraps text while maintaining pre formatting */
-        word-break: break-word; /* Prevents long words from overflowing */
-        padding: 0.5em 0; /* Adds padding for better spacing */
-        flex-grow: 1; /* Makes sure it fills the parent box */
+        white-space: pre-wrap; /* Wrap text while maintaining pre formatting */
+        word-break: break-word; /* Break long words */
+        width: auto; /* Allow it to size based on content */
+        margin: 0 auto;
+        display: inline-block; /* Keep content inline */
+    }
+
+    .four-box-layout pre a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.2em;
+        display: inline; /* Ensure anchor text is inline */
+        padding: 0.2em 0.5em;
     }
 }
 
