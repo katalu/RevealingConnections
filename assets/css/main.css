@@ -2814,6 +2814,7 @@ pre code {
 		}
 		
 		
+		
 /* Section/Article */
 
 	section.special, article.special {
@@ -3613,7 +3614,7 @@ body.is-touch #banner2 {
 
 /* Larger logos for the first three */
 #footer .large-logo {
-    max-width: 250px;                /* Larger size for first three logos */
+    max-width: 270px;                /* Larger size for first three logos */
     height: 70px;
 }
 
