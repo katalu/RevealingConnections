@@ -3628,7 +3628,7 @@ body.is-touch #banner2 {
 
 /* Larger logos for the first three */
 #footer .large-logo {
-    max-width: 270px;                /* Larger size for first three logos */
+    max-width: 350px;                /* Larger size for first three logos */
     height: 70px;
 }
 
