@@ -1865,8 +1865,8 @@ pre code {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
-    margin: 9em 9em;
+    gap: 1px;
+    margin: 7.5em 6em;
     border-radius: 10px;
     padding: 1px;
 }
@@ -1990,6 +1990,7 @@ pre code {
         width: 100%;              /* Ensure box takes full width of the container */
     }
 }
+
 
 	hr {
 		border: 0;
@@ -2212,6 +2213,21 @@ pre code {
 			.button {
 				padding: 0;
 			}
+			
+			input[type="submit"].special,
+			input[type="reset"].special,
+			input[type="button"].special,
+			button.special,
+			.button.special {
+				padding: 0 1em; /* Adjust padding to make it smaller */
+				font-size: 0.85em; /* Reduce font size */
+				background-color: #52ab86;
+				color: #ffffff !important;
+				width: auto; /* Ensure it doesn’t take up full width */
+				max-width: 150px; /* Optional: limit the max width */
+				
+			
+		}
 
 		}
 
@@ -3447,21 +3463,39 @@ body.elements-page #footer .copyright {
 					display: none;
 				}
 
+				#banner h3 {
+					font-size: 1em;/* Adjust as needed */
+					line-height: 1.3; /* Optional: adjust line height */
+				}	
+	
 				#banner h2 {
+					padding-top: 1em;
 					font-size: 2.25em;
 				}
 
 				#banner p {
 					font-size: 1.25em;
 				}
+			
 
 		}
 
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				padding: 4em 2em 4em 2em;
+				padding: 5em 2em 3em 2em;
 			}
+			
+			#banner h2 {
+					padding-top: 1em;
+					font-size: 2.25em;
+				}
+			
+			#banner h3 {
+				font-size: 1em; /* Adjust as needed */
+				line-height: 1.2; /* Optional: adjust line height */
+    }
+			
 
 		}
 
@@ -3650,6 +3684,14 @@ body.is-touch #banner2 {
 
 			#footer {
 				padding: 4em 0 0 0;
+			}
+			
+			 #footer .large-logo {
+				max-width: 240px;
+			}
+
+			#footer .small-logo {
+				max-width: 100px;
 			}
 
 				.copyright {
