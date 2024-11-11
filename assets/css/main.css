@@ -2913,6 +2913,20 @@ pre code {
 		header.major h2 {
 			font-size: 1.75em;
 		}
+		
+		.lecture-info {
+    margin: 0 0 1.5em 0; /* Same margin as before */
+    color: #aaa;
+    text-transform: uppercase;
+    width: 100%;
+    overflow-wrap: break-word; /* Ensure long words break */
+    word-wrap: break-word; 
+    white-space: normal; /* Prevent text from staying in one line */
+    line-height: 1.4; /* Adjust line height if needed */
+    font-size: 0.95em; /* Slightly reduce the font size for better fit */
+	color: #52ab86;
+	text-align: left;
+}
 
 	}
 
