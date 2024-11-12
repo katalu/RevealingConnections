@@ -1965,6 +1965,11 @@ pre code {
     padding:  0.8em 0.8em; 
 	padding-top: 0.1em;
 	font-size: 0.6em;
+	background-color: #52ab86;
+}
+
+.card-button a {
+    color: #ffffff;
 
 }
 
