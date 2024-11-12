@@ -3281,10 +3281,27 @@ body.elements-page #footer .copyright {
 
 		@media screen and (max-width: 980px) {
 
-			.navPanelToggle {
-				display: block;
-			}
+		.navPanelToggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px; /* Adjust size */
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    background: none; /* Make sure no background overlaps */
+}
 
+.navPanelToggle span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    line-height: 50px; /* Center the icon */
+    text-align: center;
+    color: #909090;
+}
 		}
 
 		.navPanelToggle *:before {
